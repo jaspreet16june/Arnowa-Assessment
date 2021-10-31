@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+.nav {
+  background-color: #ebf4ff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo {
+  height: 7.5rem;
+  width: 25rem;
+  margin-left: 0rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.formBody {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.login {
+  color: #332e6a;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.loginCred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.loginCred label {
+  color: #4b5568;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+input {
+  border: none;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.btn {
+  margin-top: 1.5rem;
+  width: 40rem;
+  background: #667eea;
+  border-radius: 2rem;
+  border: none;
+  height: 3rem;
+  color: white;
+  font-weight: bold;
+   font-family: "Ubuntu", sans-serif;
+}
