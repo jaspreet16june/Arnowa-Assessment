@@ -2,7 +2,7 @@ let express = require("express");
 let authRouter = express.Router();
 
 const userModel = require("../model/userModel");
-const { JWT_SECRET } = require("../secret");
+
 
 authRouter
     .route("/signup")
