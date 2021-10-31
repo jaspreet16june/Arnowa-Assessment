@@ -1,9 +1,12 @@
 let express = require("express");
 let authRouter = express.Router();
-
+let {bodyChecker} = require("../helper/utilFun")
+let jwt = require("jsonwebtoken");
+let {JWT_SECRET} = require("../secret")
 const userModel = require("../model/userModel");
 
 
+authRouter.use(bodyChecker)
 authRouter
     .route("/signup")
     .post(signupUser);
@@ -51,7 +54,7 @@ async function loginUser(req, res) {
             })
         }
     } catch (err) {
-        console.log(error)
+    
         res.status(404)
             .json({
                 message: err.message,
