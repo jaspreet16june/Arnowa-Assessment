@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+body {
+  position: relative;
+}
+.nav {
+  background-color: #ebf4ff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.logo {
+  height: 4.5rem;
+  width: 22rem;
+  margin-left: 0rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.formBody {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.login {
+  color: #332e6a;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.loginCred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem;
+  align-items: center;
+}
+.loginCred label {
+  color: #4b5568;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+label[for="email"] {
+  position: absolute;
+  top: 90%;
+  left: 19%;
+}
+label[for="password"] {
+  position: absolute;
+  top: 117%;
+  left: 19%;
+}
+input {
+  box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
+  padding: 1rem;
+  border: none;
+  width: 53rem;
+  outline: none;
+}
+.btn {
+  margin-top: 1.5rem;
+  width: 55rem;
+  background: #667eea;
+  border-radius: 2rem;
+  border: none;
+  height: 3rem;
+  position: absolute;
+  top: 29rem;
+  left: 15.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.account {
+  position: absolute;
+  top: 36rem;
+  left: 36rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.email {
+  position: absolute;
+  top:19rem;
+}
+.password {
+  position: absolute;
+  top:24rem;
+}

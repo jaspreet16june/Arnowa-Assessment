@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="bar.css">
-    <link rel="stylesheet" href="pie.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <link rel="stylesheet" href="css/pie.css">
 
     <style>
         body {
@@ -32,28 +32,28 @@
 
 <body>
 
-    <div class="wrapper">
-        <div class="container d-flex flex-column justify-content-center align-items-center">
-            <div class="title text-center mb-5">
-                <h1>What's your favorite FOOD?</h1>
-    
-
-<div class="barChart">
-    <canvas id="myChart2" width="500" height="400"></canvas>
-    <h1>GROWTH</h1>
-    <h1></h1>
-</div>
-<div class="pieChart">
-    <canvas id="myChart"></canvas>
-    <h1>LOSS</h1>
-    <h1></h1>
-</div>
-</div>
+<div class="wrapper">
+    <div class="title text-center mb-5">
+        <h1 style="font-size: 1.5rem; margin-top: 1rem;">Welcome Jaspreet</h1>
+    </div>
+    <div class="chart-wrapper">
+        <div class="barChart">
+            <canvas id="myChart2" width="500" height="400"></canvas>
+            <h1>GROWTH</h1>
+            <h1 style="font-size: 7rem; margin-top: 3rem;position: fixed;left:13rem; color: #75b66c;">24.9%</h1>
+        </div>
+        <div class="pieChart">
+            <canvas id="myChart"></canvas>
+            <h1>LOSS</h1>
+            <h1 style="font-size: 7rem; margin-top: 3rem;position: fixed;right: 18rem; color: 
+#e02f44;">59.3%</h1>
+        </div>
+    </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 <script>
 
 </script>

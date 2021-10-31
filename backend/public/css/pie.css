@@ -15,23 +15,24 @@ body {
 
 #myChart2 {
   position: fixed;
-  left: 20%;
-  top: 20%;
+  left: 10%;
+    top: 14%;
 }
 
 #myChart {
   position: fixed;
-  right: 20%;
-  top: 30%;
+      right: 6%;
+    top: 28%;
 }
 
 .barChart > h1 {
   position: fixed;
   top: 75%;
+left: 20%;
 }
 
 .pieChart > h1 {
   position: fixed;
   top: 75%;
-  right: 35%;
+      right: 28%;
 }
