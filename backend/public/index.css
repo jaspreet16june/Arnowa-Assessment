@@ -8,8 +8,8 @@
   text-align: center;
 }
 .logo {
-  height: 7.5rem;
-  width: 25rem;
+  height: 5.5rem;
+  width: 24rem;
   margin-left: 0rem;
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -25,7 +25,7 @@
 .login {
   color: #332e6a;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .loginCred {
   display: flex;
@@ -39,18 +39,21 @@
   font-weight: bold;
 }
 input {
-  border: none;
-  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
   padding: 1rem;
+  border: none;
+ 
+  outline: none;
 }
 .btn {
   margin-top: 1.5rem;
-  width: 40rem;
+  width: 50rem;
   background: #667eea;
   border-radius: 2rem;
   border: none;
   height: 3rem;
   color: white;
   font-weight: bold;
-   font-family: "Ubuntu", sans-serif;
+
+  font-family: "Ubuntu", sans-serif;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,42 +12,38 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    
+   
 </head>
+
 <body>
     <div class="container">
-        <div class = "nav">
-            
-                <img class = "logo" src="white-logo.png" alt="arnowa-logo" >                
-          
-        </div>
-        
-            <div class="formBody">
-                <h1 class= "login">Log in</h1>
-            </div>
-            <div class = "loginCred">
-                <label class= "emailLabel"for="email">Email Address</label>
-                
-                <input class="email" type="email" placeholder="mike@gmail.com">
-                
-                <label class = "passwordLabel" for="password">Password</label>
-                
-                <input class="password" type="password" placeholder="Enter your password">
-                <i class="bi bi-eye-slash" id="togglePassword"></i>
-            </div>
-        
-        <button class = "btn">Log in</button>
+        <div class="nav">
 
-        <div class = "account">
-            Dont't have an account ? <span>     
-            <a href="http://localhost:3002/signUp.html">Sign up</a>
-            
-            </span>    
-        </div>
-        
+            <img class="logo" src="white-logo.png" alt="arnowa-logo">
 
+        </div>
+
+        <div class="formBody">
+            <h1 class="login">Sign-Up</h1>
+        </div>
+        <div class="loginCred">
+            <label class="emailLabel" for="email">Email Address</label>
+
+            <input class="email" type="email" placeholder="mike@gmail.com">
+
+            <label class="passwordLabel" for="password">Password</label>
+
+            <input class="password" type="password" placeholder="Enter your password">
+
+            <label class="confirmPasswordLabel" for="password">Confirm Password</label>
+            
+            <input class="confirmPassword" type="password" placeholder="Re-enter your password">
+            
+        </div>
+
+        <button class="btn">Sign-In</button>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
+        <script>
             let btn = document.querySelector(".btn");
             btn.addEventListener("click", async function (e) {
                 // prevent page reload 
@@ -54,17 +51,20 @@
                 // email
                 let email = document.querySelector(".email").value;
                 // password
+                
                 let password = document.querySelector(".password").value;
+                let confirmPassword = document.querySelector(".confirmPassword").value;
+
                 let togglePassword = document.querySelector("#togglePassword")
                 //name
-                let resp = await axios.post("auth/login", { email, password })
+                let resp = await axios.post("auth/signup", { email, password,confirmPassword })
                 console.log('resp', resp);
                 if (resp) {
-                    location.assign("home.html")
+                    location.assign("index.html")
                 }
             })
-        </script> 
+        </script>
 </body>
 <link rel="stylesheet" href="index.css">
-        
+
 </html>

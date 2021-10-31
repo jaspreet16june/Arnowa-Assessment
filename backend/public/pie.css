@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background-color: #f4f5f5;
+}
+
+.container {
+  height: 100vh;
+}
+
+.chart-wrapper {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#myChart2 {
+  position: fixed;
+  left: 20%;
+  top: 20%;
+}
+
+#myChart {
+  position: fixed;
+  right: 20%;
+  top: 30%;
+}
+
+.barChart > h1 {
+  position: fixed;
+  top: 75%;
+}
+
+.pieChart > h1 {
+  position: fixed;
+  top: 75%;
+  right: 35%;
+}
